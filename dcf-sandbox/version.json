@@ -1,16 +1,18 @@
 {
- "versionCode": 16,
- "versionName": "3.2",
- "apk": "DCF-Sandbox-16.apk",
- "size": 3290557,
- "sha256": "6ae902c13da49e56e1cc6b5f777289e48cf5c57b7f33b319fb364b64ab555cdc",
- "released": 1794893198508,
+ "versionCode": 17,
+ "versionName": "3.3",
+ "apk": "DCF-Sandbox-17.apk",
+ "size": 3335613,
+ "sha256": "7634d0b6a64207011fcd0869709dacac604575ba3d8bb9445e1ee091fcb1d184",
+ "released": 1794895460971,
  "notes": [
-  "Adaptive Workspace: Code, Terminal, Sites, Preview, Database, Versions, Security",
-  "Engine Registry: Installed, Available, Reserved; add engines without an app update",
-  "Code Space: paste code and it goes where it belongs",
-  "Interface faces: Prime, Living Tree, Bubbles, Constellation, Ocean Garden, Plain",
-  "Floating tool rail, adaptive fading, fluid open and close",
-  "Soft champagne gold palette"
+  "File Chamber: safe intake, checks, structure report, routing \u2014 never runs what arrives",
+  "System Inspector + Permission Center + Resource Monitor",
+  "Sankofa Learning Institution: a course for every engine, practice rooms, simulations, skill checks, Creator Academy",
+  "PulsePlay: quick mind games in Yard Credits, 10-round number history",
+  "USB & Drives through Android's picker",
+  "Personality Studio: CAP, Forge, Sage, Sentry and your own",
+  "Every answer: like, listen, copy, share, save; story/song/script routes only when you're creating",
+  "Side rail fades to the edge; brand ribbon on home"
  ]
 }
