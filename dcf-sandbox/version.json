@@ -1,13 +1,12 @@
 {
- "versionCode": 25,
- "versionName": "4.1",
- "apk": "DCF-Sandbox-25.apk",
+ "versionCode": 26,
+ "versionName": "4.2",
+ "apk": "DCF-Sandbox-26.apk",
  "size": 3487621,
- "sha256": "ede88d86397b309e2b2dce6cccc18815891fd7028b0c65a6d37f7c2d4a250933",
- "released": 1794901856690,
+ "sha256": "bd00ca334e0ff5a4472773b8fa9c8c4440563964e6c9d2bfe01c7fccd9c1b57f",
+ "released": 1794922450177,
  "notes": [
-  "Brand family ribbon: each company with its own mini banner \u2014 XXOON's elephants (rotating scenes), Sankofa bird, Mintage crest, YardFlex bridge, YAADFLEXGLOBALVIBES globe, Nexus OS window, Themis scales, DCF crest, Y-A-A-D, Sunroof",
-  "Modules follow: Global Register, IP Bank (YaadFlex Platform in the registry)",
-  "Tap a banner for its identity card; choose brands in Interface Studio"
+  "Bridge update: after this, updates come privately from your YAADFLEX-CORE repo",
+  "Connect GitHub (Connect \u2192 GitHub) with a token that can read YAADFLEX-CORE"
  ]
 }
