@@ -1,15 +1,17 @@
 {
- "versionCode": 13,
- "versionName": "2.9",
- "apk": "DCF-Sandbox-13.apk",
- "size": 3241405,
- "sha256": "aed036a99d4e7f68aec18932f4a32f7062dae916381a673f91f8ea6945e948ed",
- "released": 1794887777718,
+ "versionCode": 14,
+ "versionName": "3.0",
+ "apk": "DCF-Sandbox-14.apk",
+ "size": 3261885,
+ "sha256": "21b4045cac938cce1c369204e4e0b135dd1bb03825117df207afdf383d61ca05",
+ "released": 1794890453242,
  "notes": [
-  "Updates itself from now on: DCF checks your GitHub and offers new versions",
-  "Numbers board, roulette and market backgrounds",
-  "Scheduled skills for the First Mate",
-  "YaadFlex Platform control panel",
-  "Settings: themes and options right on the screen"
+  "New look: soft Graphite grey, open layout, floating words, colour with a job (gold, emerald, cyan, violet)",
+  "Five living backgrounds: Caribbean Moonlight, Deep Sea, Galaxy Nexus, Urban Future, Nature Prime, plus plain Black, White, Charcoal, Green",
+  "Camera: photo, video, front/back, zoom, torch, Read what it sees",
+  "Screen: screenshot of any screen, record the screen while you use other apps",
+  "Mango Studio: make images and real videos with Mango's camera and motion agents",
+  "Chat box tools: Camera, Share file, Tasks, Code, Projects, Artifacts, Mango",
+  "Fixes: clean PIN keypad, header fits, the Captain never hangs on thinking"
  ]
 }
