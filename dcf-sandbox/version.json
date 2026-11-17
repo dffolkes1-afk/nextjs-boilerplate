@@ -1,17 +1,16 @@
 {
- "versionCode": 15,
- "versionName": "3.1",
- "apk": "DCF-Sandbox-15.apk",
- "size": 3270077,
- "sha256": "491900fc1bfedc103e032b2f3faa4fc27f910fe3020bce8def11bb79f42936c9",
- "released": 1794891148282,
+ "versionCode": 16,
+ "versionName": "3.2",
+ "apk": "DCF-Sandbox-16.apk",
+ "size": 3290557,
+ "sha256": "6ae902c13da49e56e1cc6b5f777289e48cf5c57b7f33b319fb364b64ab555cdc",
+ "released": 1794893198508,
  "notes": [
-  "Captain fixed: answers can't hang the queue anymore, a Stop button, shorter context for the phone model, Self-check times a real answer",
-  "DCF Prime home: Captain hero, clock and Kingston weather, live globe, System Status, module cards",
-  "Themes: miniature screen previews and a live preview before you apply",
-  "Colours and backgrounds are separate now: any theme with any scenery",
-  "Movement: Still, Gentle, Full; holds still while you type and on low battery",
-  "Royal Obsidian refined with champagne gold; Moonlight Water and Emerald Night more alive",
-  "Camera, screen capture and Mango Studio from v3.0"
+  "Adaptive Workspace: Code, Terminal, Sites, Preview, Database, Versions, Security",
+  "Engine Registry: Installed, Available, Reserved; add engines without an app update",
+  "Code Space: paste code and it goes where it belongs",
+  "Interface faces: Prime, Living Tree, Bubbles, Constellation, Ocean Garden, Plain",
+  "Floating tool rail, adaptive fading, fluid open and close",
+  "Soft champagne gold palette"
  ]
 }

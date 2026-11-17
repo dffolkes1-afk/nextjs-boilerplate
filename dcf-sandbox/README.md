@@ -4,7 +4,7 @@ Open this link in **Chrome** on your Android phone to download, then tap **Open*
 
 https://github.com/dffolkes1-afk/nextjs-boilerplate/raw/dcf-sandbox-download/dcf-sandbox/DCF-Sandbox.apk
 
-App file only (v3.1). No source code or personal data.
+App file only (v3.2). No source code or personal data.
 
 
 ## Newest version (never stale)
