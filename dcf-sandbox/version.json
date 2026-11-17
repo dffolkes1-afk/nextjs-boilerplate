@@ -1,14 +1,14 @@
 {
- "versionCode": 22,
- "versionName": "3.8",
- "apk": "DCF-Sandbox-22.apk",
- "size": 3360189,
- "sha256": "c8365938f95edb5045951ed018c495d691e101ceadfe30e439c4a4d78350fc32",
- "released": 1794898301668,
+ "versionCode": 23,
+ "versionName": "3.9",
+ "apk": "DCF-Sandbox-23.apk",
+ "size": 3364285,
+ "sha256": "591a216847eafa97254baee2b0f3612b86d0c30623ad36c2e4806dfdd7ccfcd4",
+ "released": 1794898761756,
  "notes": [
-  "Chat box rests as one slim line until you type",
-  "Quiet top: one small selector for Sandbox, CAP and your workers; faint status that lights up only on change",
-  "Smaller bottom bar",
-  "Switches for all of it in Interface Studio"
+  "\u2630 drawer holds your programs and your chats; New chat keeps the old one",
+  "Bottom bar steps aside, chat box at the bottom",
+  "Big screens: the drawer is an always-open sidebar",
+  "Settings holds everything else"
  ]
 }
