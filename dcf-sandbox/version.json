@@ -1,15 +1,13 @@
 {
- "versionCode": 20,
- "versionName": "3.6",
- "apk": "DCF-Sandbox-20.apk",
+ "versionCode": 21,
+ "versionName": "3.7",
+ "apk": "DCF-Sandbox-21.apk",
  "size": 3356093,
- "sha256": "3be649180362214c65d9008ff2904e32f9a8d638c2b0fdb6009d2d15ad10b759",
- "released": 1794897441821,
+ "sha256": "ad152be2eb15b071f87fe5b81238839ad89af39980c5b4e6069653f7ec8dd430",
+ "released": 1794897586601,
  "notes": [
-  "Clean chat box: everything lives inside the plus",
-  "Small, pale round send button",
-  "Under every reply: copy, speak, like, dislike, try again, download, share, more",
-  "Your own messages: copy and edit",
-  "Jump-to-newest button"
+  "Hold any message (yours or the AI's): copy, select text, send again, edit, try again, continue, reply to it, speak, share, download, save, remember, notes, open code",
+  "No avatar circles; one quiet row of small icons under replies",
+  "Suggestions are plain text, no bubbles"
  ]
 }
