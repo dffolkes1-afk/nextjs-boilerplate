@@ -1,17 +1,17 @@
 {
- "versionCode": 14,
- "versionName": "3.0",
- "apk": "DCF-Sandbox-14.apk",
- "size": 3261885,
- "sha256": "21b4045cac938cce1c369204e4e0b135dd1bb03825117df207afdf383d61ca05",
- "released": 1794890453242,
+ "versionCode": 15,
+ "versionName": "3.1",
+ "apk": "DCF-Sandbox-15.apk",
+ "size": 3270077,
+ "sha256": "491900fc1bfedc103e032b2f3faa4fc27f910fe3020bce8def11bb79f42936c9",
+ "released": 1794891148282,
  "notes": [
-  "New look: soft Graphite grey, open layout, floating words, colour with a job (gold, emerald, cyan, violet)",
-  "Five living backgrounds: Caribbean Moonlight, Deep Sea, Galaxy Nexus, Urban Future, Nature Prime, plus plain Black, White, Charcoal, Green",
-  "Camera: photo, video, front/back, zoom, torch, Read what it sees",
-  "Screen: screenshot of any screen, record the screen while you use other apps",
-  "Mango Studio: make images and real videos with Mango's camera and motion agents",
-  "Chat box tools: Camera, Share file, Tasks, Code, Projects, Artifacts, Mango",
-  "Fixes: clean PIN keypad, header fits, the Captain never hangs on thinking"
+  "Captain fixed: answers can't hang the queue anymore, a Stop button, shorter context for the phone model, Self-check times a real answer",
+  "DCF Prime home: Captain hero, clock and Kingston weather, live globe, System Status, module cards",
+  "Themes: miniature screen previews and a live preview before you apply",
+  "Colours and backgrounds are separate now: any theme with any scenery",
+  "Movement: Still, Gentle, Full; holds still while you type and on low battery",
+  "Royal Obsidian refined with champagne gold; Moonlight Water and Emerald Night more alive",
+  "Camera, screen capture and Mango Studio from v3.0"
  ]
 }
