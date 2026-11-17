@@ -1,14 +1,15 @@
 {
- "versionCode": 18,
- "versionName": "3.4",
- "apk": "DCF-Sandbox-18.apk",
- "size": 3339709,
- "sha256": "611773a6d25ee49709433f1d6acd1d1d981d90c7a6d8b0c0df0108147a8a6b8f",
- "released": 1794896068384,
+ "versionCode": 19,
+ "versionName": "3.5",
+ "apk": "DCF-Sandbox-19.apk",
+ "size": 3351997,
+ "sha256": "ab1adad1048acc78e9bb525895a8318ff6e30369cd87b80f7fe76373a3dc23a2",
+ "released": 1794896690633,
  "notes": [
-  "Characters: Zuri, Omari, Amani, Marlowe, Kade \u2014 they feel like people and say they're AI if asked",
-  "NOVA: openly an AI, with a living AI face",
-  "Each character brings their own world; switching back restores yours",
-  "Public product stays unnamed for now"
+  "Scouts: weather, money, history, knowledge, tech, your feed \u2014 a trickle of public info",
+  "Concept drip: 46 short lessons from Claude, taught to CAP one at a time, offline",
+  "Overnight scouting while charging on Wi-Fi (Android job scheduler, no running service)",
+  "Teach or forget any single find; CAP gets today's weather, rates and news as context",
+  "Voice scout suggests a phone voice for each character"
  ]
 }
