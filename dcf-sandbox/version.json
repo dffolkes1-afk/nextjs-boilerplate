@@ -1,18 +1,14 @@
 {
- "versionCode": 17,
- "versionName": "3.3",
- "apk": "DCF-Sandbox-17.apk",
- "size": 3335613,
- "sha256": "7634d0b6a64207011fcd0869709dacac604575ba3d8bb9445e1ee091fcb1d184",
- "released": 1794895460971,
+ "versionCode": 18,
+ "versionName": "3.4",
+ "apk": "DCF-Sandbox-18.apk",
+ "size": 3339709,
+ "sha256": "611773a6d25ee49709433f1d6acd1d1d981d90c7a6d8b0c0df0108147a8a6b8f",
+ "released": 1794896068384,
  "notes": [
-  "File Chamber: safe intake, checks, structure report, routing \u2014 never runs what arrives",
-  "System Inspector + Permission Center + Resource Monitor",
-  "Sankofa Learning Institution: a course for every engine, practice rooms, simulations, skill checks, Creator Academy",
-  "PulsePlay: quick mind games in Yard Credits, 10-round number history",
-  "USB & Drives through Android's picker",
-  "Personality Studio: CAP, Forge, Sage, Sentry and your own",
-  "Every answer: like, listen, copy, share, save; story/song/script routes only when you're creating",
-  "Side rail fades to the edge; brand ribbon on home"
+  "Characters: Zuri, Omari, Amani, Marlowe, Kade \u2014 they feel like people and say they're AI if asked",
+  "NOVA: openly an AI, with a living AI face",
+  "Each character brings their own world; switching back restores yours",
+  "Public product stays unnamed for now"
  ]
 }
