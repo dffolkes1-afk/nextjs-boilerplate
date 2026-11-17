@@ -1,14 +1,13 @@
 {
- "versionCode": 24,
- "versionName": "4.0",
- "apk": "DCF-Sandbox-24.apk",
- "size": 3368381,
- "sha256": "f2e7babc6d6be94ce18327a2ef33ab22fc1b60513265913fbb9bd318ac23aa8f",
- "released": 1794899283239,
+ "versionCode": 25,
+ "versionName": "4.1",
+ "apk": "DCF-Sandbox-25.apk",
+ "size": 3487621,
+ "sha256": "ede88d86397b309e2b2dce6cccc18815891fd7028b0c65a6d37f7c2d4a250933",
+ "released": 1794901856690,
  "notes": [
-  "YaadFlex Platform inside DCF, on standby: test mode, private, no real money",
-  "Create AI apps with a personality, instructions, their own key and a test-credit wallet",
-  "Phone API accepts YaadFlex app keys; every call metered into a double-entry ledger",
-  "Playground, ledger and docs; going live stays reserved"
+  "Brand family ribbon: each company with its own mini banner \u2014 XXOON's elephants (rotating scenes), Sankofa bird, Mintage crest, YardFlex bridge, YAADFLEXGLOBALVIBES globe, Nexus OS window, Themis scales, DCF crest, Y-A-A-D, Sunroof",
+  "Modules follow: Global Register, IP Bank (YaadFlex Platform in the registry)",
+  "Tap a banner for its identity card; choose brands in Interface Studio"
  ]
 }
