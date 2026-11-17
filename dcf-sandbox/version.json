@@ -1,14 +1,14 @@
 {
- "versionCode": 23,
- "versionName": "3.9",
- "apk": "DCF-Sandbox-23.apk",
- "size": 3364285,
- "sha256": "591a216847eafa97254baee2b0f3612b86d0c30623ad36c2e4806dfdd7ccfcd4",
- "released": 1794898761756,
+ "versionCode": 24,
+ "versionName": "4.0",
+ "apk": "DCF-Sandbox-24.apk",
+ "size": 3368381,
+ "sha256": "f2e7babc6d6be94ce18327a2ef33ab22fc1b60513265913fbb9bd318ac23aa8f",
+ "released": 1794899283239,
  "notes": [
-  "\u2630 drawer holds your programs and your chats; New chat keeps the old one",
-  "Bottom bar steps aside, chat box at the bottom",
-  "Big screens: the drawer is an always-open sidebar",
-  "Settings holds everything else"
+  "YaadFlex Platform inside DCF, on standby: test mode, private, no real money",
+  "Create AI apps with a personality, instructions, their own key and a test-credit wallet",
+  "Phone API accepts YaadFlex app keys; every call metered into a double-entry ledger",
+  "Playground, ledger and docs; going live stays reserved"
  ]
 }
