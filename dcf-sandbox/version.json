@@ -1,15 +1,15 @@
 {
- "versionCode": 19,
- "versionName": "3.5",
- "apk": "DCF-Sandbox-19.apk",
- "size": 3351997,
- "sha256": "ab1adad1048acc78e9bb525895a8318ff6e30369cd87b80f7fe76373a3dc23a2",
- "released": 1794896690633,
+ "versionCode": 20,
+ "versionName": "3.6",
+ "apk": "DCF-Sandbox-20.apk",
+ "size": 3356093,
+ "sha256": "3be649180362214c65d9008ff2904e32f9a8d638c2b0fdb6009d2d15ad10b759",
+ "released": 1794897441821,
  "notes": [
-  "Scouts: weather, money, history, knowledge, tech, your feed \u2014 a trickle of public info",
-  "Concept drip: 46 short lessons from Claude, taught to CAP one at a time, offline",
-  "Overnight scouting while charging on Wi-Fi (Android job scheduler, no running service)",
-  "Teach or forget any single find; CAP gets today's weather, rates and news as context",
-  "Voice scout suggests a phone voice for each character"
+  "Clean chat box: everything lives inside the plus",
+  "Small, pale round send button",
+  "Under every reply: copy, speak, like, dislike, try again, download, share, more",
+  "Your own messages: copy and edit",
+  "Jump-to-newest button"
  ]
 }
