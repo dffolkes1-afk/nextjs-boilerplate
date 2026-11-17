@@ -1,0 +1,15 @@
+{
+ "versionCode": 13,
+ "versionName": "2.9",
+ "apk": "DCF-Sandbox.apk",
+ "size": 3241405,
+ "sha256": "aed036a99d4e7f68aec18932f4a32f7062dae916381a673f91f8ea6945e948ed",
+ "released": 1794887697594,
+ "notes": [
+  "Updates itself from now on: DCF checks your GitHub and offers new versions",
+  "Numbers board, roulette and market backgrounds",
+  "Scheduled skills for the First Mate",
+  "YaadFlex Platform control panel",
+  "Settings: themes and options right on the screen"
+ ]
+}
