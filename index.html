@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>DCF Drop</title>
+<style>
+:root{--ink:#0b0a08;--panel:#15130f;--line:rgba(216,196,154,.18);--gold:#d8b46a;--text:#efe7d6;--mute:#a59a86;--ok:#4fa885;--bad:#e07a6e}
+*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.w{max-width:680px;margin:0 auto;padding:22px 16px 50px}h1{margin:0;font-size:20px;letter-spacing:.14em;color:var(--gold)}p.m{color:var(--mute);margin:4px 0 16px;font-size:13.5px}
+label{display:block;font-size:12px;color:var(--mute);margin:12px 0 4px}input,textarea{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px;font:inherit}textarea{min-height:90px}
+.f{border:1px solid var(--line);border-radius:14px;padding:10px;margin-top:8px}.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+button{font:inherit;padding:10px 16px;border-radius:12px;border:1px solid var(--gold);background:none;color:var(--gold);cursor:pointer}button.s{background:var(--gold);color:var(--ink);font-weight:600}
+#msg{margin-top:14px;font-size:14px}#msg.ok{color:var(--ok)}#msg.bad{color:var(--bad)}.tabs{display:flex;gap:6px;margin-top:6px}.tabs button{padding:6px 12px;font-size:13px}.tabs button.on{background:var(--gold);color:var(--ink)}
+</style></head><body><div class="w">
+<h1>DCF DROP</h1><p class="m" id="who">Send work into a DCF workspace. It waits in the owner’s Bridge inbox until they accept it.</p>
+<div id="bad" class="f" style="display:none;color:var(--bad)">This link is missing its personal code. Ask the owner for their DCF drop link.</div>
+<form id="form">
+<div class="tabs"><button type="button" data-t="form" class="on">Write it</button><button type="button" data-t="env">Paste a DCF envelope</button></div>
+<div id="tForm"><label>From</label><input id="from" value="chatgpt"><label>Title</label><input id="title" placeholder="What is it?" required><label>Notes</label><textarea id="notes" placeholder="What it does, what was tested, what’s left"></textarea>
+<label>Files</label><div id="files"></div><div class="row"><button type="button" id="addF">Add a file</button><input type="file" id="pick" multiple style="display:none"><button type="button" id="up">Upload files</button></div></div>
+<div id="tEnv" style="display:none"><label>DCF work envelope (JSON with "dcf": "work/1")</label><textarea id="env" style="min-height:220px" placeholder='{"dcf":"work/1","title":"…","files":[{"path":"…","text":"…"}]}'></textarea></div>
+<div class="row"><button class="s" type="submit" id="go">Send to DCF</button></div><div id="msg"></div></form>
+</div>
+<script>
+(function(){ var h={}; location.hash.replace(/^#/,"").split("&").forEach(function(kv){ var i=kv.indexOf("="); if(i>0) h[kv.slice(0,i)]=decodeURIComponent(kv.slice(i+1)) });
+ var P=h.p,K=h.k,B=h.b,NAME=h.n||"the owner"; if(!(P&&K&&B)){ document.getElementById("bad").style.display="block"; document.getElementById("form").style.display="none"; return }
+ document.getElementById("who").textContent="Send work into "+NAME+"’s DCF workspace. It waits in the Bridge inbox until "+NAME+" accepts it.";
+ var mode="form"; [].forEach.call(document.querySelectorAll(".tabs button"),function(b){ b.onclick=function(){ mode=b.dataset.t; [].forEach.call(document.querySelectorAll(".tabs button"),function(x){x.classList.toggle("on",x===b)}); document.getElementById("tForm").style.display=mode==="form"?"":"none"; document.getElementById("tEnv").style.display=mode==="env"?"":"none"; document.getElementById("title").required=mode==="form" } });
+ var box=document.getElementById("files"); function addFile(path,text){ var d=document.createElement("div"); d.className="f"; d.innerHTML='<label>Path</label><input class="fp" placeholder="tools/v60_example.js"><label>Content</label><textarea class="ft"></textarea><div class="row"><button type="button">Remove</button></div>'; d.querySelector(".fp").value=path||""; d.querySelector(".ft").value=text||""; d.querySelector("button").onclick=function(){ d.remove() }; box.appendChild(d) }
+ document.getElementById("addF").onclick=function(){ addFile() }; document.getElementById("up").onclick=function(){ document.getElementById("pick").click() };
+ document.getElementById("pick").onchange=function(){ [].forEach.call(this.files,function(f){ if(f.size>800000) return say("“"+f.name+"” is too big (800 KB max).",1); var r=new FileReader(); r.onload=function(){ addFile(f.name,r.result) }; r.readAsText(f) }) };
+ function say(t,bad){ var m=document.getElementById("msg"); m.textContent=t; m.className=bad?"bad":"ok" }
+ function sv(v){ return {stringValue:String(v==null?"":v)} }
+ document.getElementById("form").onsubmit=function(e){ e.preventDefault(); var env;
+  if(mode==="env"){ try{ env=JSON.parse(document.getElementById("env").value.trim().replace(/^```(?:json)?\s*|\s*```$/g,"")) }catch(x){ return say("That isn’t valid JSON.",1) } if(env.dcf!=="work/1") return say("It needs \"dcf\": \"work/1\".",1) }
+  else { var files=[].map.call(box.querySelectorAll(".f"),function(d){ return {path:d.querySelector(".fp").value.trim(),text:d.querySelector(".ft").value} }).filter(function(f){return f.path&&f.text});
+    env={dcf:"work/1",from:document.getElementById("from").value.trim()||"chatgpt",title:document.getElementById("title").value.trim(),notes:document.getElementById("notes").value.trim(),files:files} }
+  if(!(env.files&&env.files.length)&&!env.notes) return say("Add a file or some notes.",1);
+  var payload=JSON.stringify({files:env.files||[]}); if(payload.length>900000) return say("Too big for one drop (about 900 KB). Split it into parts.",1);
+  var body={fields:{dcf:sv("work/1"),key:sv(B),from:sv(env.from||"chatgpt"),title:sv(env.title||"Work"),kind:sv(env.kind||"files"),target:sv(env.target||""),notes:sv(env.notes||""),payload:sv(payload)}};
+  document.getElementById("go").disabled=true; say("Sending…");
+  fetch("https://firestore.googleapis.com/v1/projects/"+encodeURIComponent(P)+"/databases/(default)/documents/dcf_inbox?key="+encodeURIComponent(K),{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+   .then(function(r){ return r.json().then(function(j){ return {ok:r.ok,j:j} }) }).then(function(x){ document.getElementById("go").disabled=false;
+     if(x.ok){ say("Delivered to "+NAME+"’s DCF mailbox. It will show in the Bridge inbox."); document.getElementById("form").reset(); box.innerHTML="" }
+     else say("Not delivered: "+((x.j.error&&x.j.error.message)||"the mailbox refused it")+". The personal code may have changed — ask "+NAME+" for the new link.",1) })
+   .catch(function(){ document.getElementById("go").disabled=false; say("No connection — try again.",1) }) };
+})();
+</script></body></html>
